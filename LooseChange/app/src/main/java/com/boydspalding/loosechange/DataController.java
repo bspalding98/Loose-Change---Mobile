@@ -25,7 +25,7 @@ public class DataController {
         editor.apply();
     }
 
-    public static List<String> readListFromPref(Context context) {
+    public static List<String> readListFromPref(MainActivity context) {
         SharedPreferences pref = PreferenceManager.getDefaultSharedPreferences(context);
         String jsonString = pref.getString(LIST_KEY, "");
 
